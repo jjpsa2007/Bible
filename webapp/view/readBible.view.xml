@@ -1,0 +1,18 @@
+<mvc:View xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" 
+controllerName="Bible.controller.readBible" xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml">
+<Page showHeader="true" showNavButton="true" navButtonPress="onBackPress" id="readBiblePage">
+<content>
+<!-- <List id="readBibleList" items="{readBibleModel>/}" wrapping="true">
+<StandardListItem title="{readBibleModel>verse}" adaptTitleSize="true"/>
+<Title text="{readBibleModel>verse" /> -->
+<!-- </List> -->
+<l:VerticalLayout>
+<l:HorizontalLayout id="readBibleLayout" allowWrapping="true" content="{readBibleModel>/}">
+<Title text="{readBibleModel>verse}" wrapping="true" class="sapUiTinyMarginBegin sapUiTinyMarginEnd sapUiTinyMarginTop"/>
+
+</l:HorizontalLayout>
+</l:VerticalLayout>
+
+</content>
+</Page>
+</mvc:View>

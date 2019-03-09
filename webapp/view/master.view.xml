@@ -1,0 +1,20 @@
+<mvc:View xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" 
+controllerName="Bible.controller.master">
+<Page showHeader="true" >
+<customHeader>
+<Toolbar>
+<SearchField placeholder="Search Books" showSearchButton="true" liveChange="onSearchBible"/>
+</Toolbar>
+</customHeader>
+<content>
+<List id="chapterList" items="{path: 'bibleModel>/'}" 
+mode="SingleSelectMaster" selectionChange="selectChapter">
+<items>
+<StandardListItem 
+title="{path: 'bibleModel>name'}" type="Active">
+</StandardListItem>
+</items>
+</List>
+</content>
+</Page>
+</mvc:View>

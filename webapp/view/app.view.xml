@@ -1,0 +1,4 @@
+<mvc:View xmlns:core="spa.ui.core" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" 
+displayBlock="true" controllerName="Bible.controller.app">
+<SplitApp id="app"></SplitApp>
+</mvc:View>

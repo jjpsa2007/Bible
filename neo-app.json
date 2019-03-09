@@ -1,0 +1,47 @@
+{
+    "welcomeFile": "webapp/index.html",
+    "routes": [{
+        "path": "/resources",
+        "target": {
+            "type": "service",
+            "name": "sapui5",
+            "entryPath": "/resources"
+        },
+        "description": "SAPUI5 Resources"
+    },
+    {
+        "path": "/test-resources",
+        "target": {
+            "type": "service",
+            "name": "sapui5",
+            "entryPath": "/test-resources"
+        }
+    },
+    {
+        "path": "/backend",
+        "target": {
+            "type": "destination",
+            "name": "BACKEND"
+        },
+        "description": "BACKEND"
+    }
+],
+"sendWelcomeFileRedirect": true,
+"cacheControl": [
+    {
+        "directive": "public",
+        "path": "sap-ui-cachebuster-info.json",
+        "maxAge": 0
+    },
+    {
+        "directive": "public",
+        "path": "/resources/",
+        "maxAge": 1296000
+    },
+    {
+        "directive": "private",
+        "maxAge": 1
+    }
+    
+]
+}

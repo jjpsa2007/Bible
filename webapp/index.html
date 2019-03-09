@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bible</title>
+    <script id="sap-ui-bootstrap" src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+    data-sap-ui-libs = "sap.m"
+    data-sap-ui-theme = "sap_belize"
+    data-sap-ui-compactVersion = "edge"
+    data-sap-ui-bindingSyntax = "complex"
+    data-sap-ui-resourceroots='{"Bible": ""}'></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+        sap.ui.getCore().attachInit(function(){
+            new sap.m.Shell({
+                app: sap.ui.core.ComponentContainer({
+                    height: "100%",
+                    name: "Bible",
+                    width: "100%"
+                }),
+                // appWidthLimited: false
+            }).placeAt("content");
+            // var oComponent = new sap.ui.core.ComponentContainer({
+            //     height: "100%"
+            // });
+            // new sap.m.Shell({
+            //     app: oComponent,
+            //     appWidthLimited: false,
+            //     showLogout: false
+            // }).placeAt("content");
+            // var comp = sap.ui.component({
+            //     name: "Bible",
+            //     manifestFirst: true,
+            //     async: true
+            // }).then(function(){
+            //     oComponent.setComponent(comp);
+            // });
+        });
+    </script>
+</head>
+<body id="content" class="sapUiBody">
+    
+</body>
+</html>
